@@ -15,6 +15,7 @@ final class CreateStreamedResponseContentBlockStart
         public readonly ?string $text,
         public readonly ?string $name,
         public readonly ?array $input,
+        public readonly ?string $thinking,
     ) {}
 
     /**
@@ -28,6 +29,7 @@ final class CreateStreamedResponseContentBlockStart
             $attributes['text'] ?? null,
             $attributes['name'] ?? null,
             $attributes['input'] ?? null,
+            $attributes['thinking'] ?? null,
         );
     }
 
@@ -42,6 +44,7 @@ final class CreateStreamedResponseContentBlockStart
             'text' => $this->text,
             'name' => $this->name,
             'input' => $this->input,
+            'thinking' => $this->thinking,
         ];
     }
 }
