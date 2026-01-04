@@ -12,6 +12,8 @@ final class CreateStreamedResponseDelta
         public readonly ?string $partial_json,
         public readonly ?string $stop_reason,
         public readonly ?string $stop_sequence,
+        public readonly ?string $thinking,                                                                                                                                                                                                                                                        
+        public readonly ?string $signature,
     ) {}
 
     /**
@@ -25,6 +27,8 @@ final class CreateStreamedResponseDelta
             $attributes['partial_json'] ?? null,
             $attributes['stop_reason'] ?? null,
             $attributes['stop_sequence'] ?? null,
+            $attributes['thinking'] ?? null,                                                                                                                                                                                                                                                           
+            $attributes['signature'] ?? null,
         );
     }
 
@@ -42,6 +46,14 @@ final class CreateStreamedResponseDelta
 
         if ($this->partial_json !== null) {
             $data['partial_json'] = $this->partial_json;
+        }
+
+        if ($this->thinking !== null) {                                                                                                                                                                                                                                                          
+            $data['thinking'] = $this->thinking;                                                                                                                                                                                                                                                                          
+        }                                                                                                                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                                                                                            
+        if ($this->signature !== null) {                                                                                                                                                                                                                                                           
+            $data['signature'] = $this->signature;                                                                                                                                                                                                                                                                        
         }
 
         return $data;
