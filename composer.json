@@ -1,6 +1,6 @@
 {
-    "name": "mozex/anthropic-php",
-    "description": "Anthropic PHP is a supercharged community-maintained PHP API client that allows you to interact with Anthropic API.",
+    "name": "cryptoman3/anthropic-php",
+    "description": "Anthropic PHP client with extended thinking support (fork of mozex/anthropic-php).",
     "keywords": ["php", "anthropic", "sdk", "claude", "Claude-3-Opus", "Claude-3-Sonnet", "Claude-3-Haiku", "api", "client", "natural", "language", "processing"],
     "license": "MIT",
     "authors": [
@@ -68,6 +68,7 @@
         ]
     },
     "extra": {
-        "COV": "0.10.3"
+        "COV": "0.10.3",
+        "fork-of": "mozex/anthropic-php"
     }
 }
